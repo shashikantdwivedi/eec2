@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Emerging Entrepreneur Award 2k19</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <!-- <link href="img/favicon.png" rel="icon">
+     <link href="img/apple-touch-icon.png" rel="apple-touch-icon">-->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+          rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css"/>
+    <link href="{{ url_for('static', filename='lib/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <!-- Libraries CSS Files -->
+    <link href="{{ url_for('static', filename='lib/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/animate/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+
+    <!-- =======================================================
+      Theme Name: NewBiz
+      Theme URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
+      Author: BootstrapMade.com
+      License: https://bootstrapmade.com/license/
+    ======================================================= -->
+</head>
+
+<body>
+
+<!--==========================
+Header
+============================-->
+<header id="header" class="fixed-top" style="overflow-y: hidden">
+    <div class="container logo-container">
+
+        <div class="logo float-left">
+            <a href="#intro" class="scrollto"><img src="{{ url_for('static', filename='img/logo.png') }}" alt=""
+                                                   class="img-fluid"></a>
+        </div>
+
+        <nav class="main-nav float-right d-none d-lg-block">
+            <ul>
+                <li class="active"><a href="#intro">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#why-us">Prizes</a></li>
+                <li><a href="#portfolio">Glimpses</a></li>
+                <li><a href="#footer">Contact Us</a></li>
+            </ul>
+        </nav><!-- .main-nav -->
+
+    </div>
+</header><!-- #header -->
+
+<!--==========================
+  Intro Section
+============================-->
+<section id="intro" class="clearfix">
+    <div class="container">
+
+        <div class="intro-img">
+            <img src="{{ url_for('static', filename='img/entrepreneurship.svg') }}" alt="" class="img-fluid">
+        </div>
+
+        <div class="intro-info" style="overflow-y: hidden">
+            <h2 style="overflow-y: hidden" class="">Emerging Entrepreneur Competition 2019 </h2>
+            <div>
+                <a href="{{ url_for('register') }}" target="_blank" class="btn-get-started scrollto">Register</a>
+                <a href="{{ url_for('login') }}" target="_blank" class="btn-services scrollto">Login</a>
+            </div>
+        </div>
+
+    </div>
+</section><!-- #intro -->
+
+<main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+        <div class="container">
+
+            <header class="section-header">
+                <h3 class="mb-5 " style="overflow-y: hidden;">About</h3>
+            </header>
+
+            <div class="row about-container" style="overflow-y: hidden">
+
+                <div class="col-lg-6 content order-lg-1 order-2" style="overflow-y: hidden">
+                    <p><strong>Emerging Entrepreneur Competition 2019 </strong> is organized by
+                        <strong><a href="http://cpur.in"
+                                   target="_blank">School of Commerce and Management, Career
+                            Point University</a></strong> to encourage today's youth towards entrepreneurship.To provide
+                        a
+                        platform to the students who want to prove their knowledge and skills
+                        .</p>
+
+
+                    <div class="icon-box wow fadeInUp">
+                        <h4 class="title" style="overflow-y: hidden;"><a>Ideology</a></h4>
+                        <p class="description">To test the feasibility and acceptability of the b-plan in market, as
+                            market is dynamic and it keeps on changing so the idea may be acceptable today but it has to
+                            be modified on the day when it is to be implemented.</p>
+                    </div>
+
+                    <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+                        <h4 class="title" style="overflow-y: hidden;"><a>For whom it is for ?</a></h4>
+                        <p class="description">This would benefit the ones who want to be the entrepreneur of tomorrow
+                            and the ones who want to showcase their talent/ideas to masses and want it to be assessed by
+                            experts.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp d-flex justify-content-center">
+                    <img src="{{ url_for('static', filename='img/idea.svg') }}" class="img-fluid mt-n5 idea-svg" alt="">
+                </div>
+            </div>
+
+            <div class="row about-extra" style="overflow-y: hidden">
+                <div class="col-lg-6 wow fadeInUp d-flex justify-content-center">
+                    <img src="{{ url_for('static', filename='img/detail.svg') }}" class="img-fluid " alt="">
+                </div>
+                <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+                    <h4 style="overflow-y: hidden;">Details</h4>
+                    <ol class="p-3" style="list-style-type:disc;">
+                        <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                            EMERGING ENTREPRENEUR Competition 2019 will be held in two phases.
+                        </li>
+                        <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                            Registration will be started from 15th june,19.
+                        </li>
+                        <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                            The decision of the jury will be considered as final.
+                        </li>
+                        <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                            Students of Career Point can participate in this competition.
+                        </li>
+                        <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                            Registration is totally free.
+                        </li>
+                        <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                            The competition will be held at Career Point University, CP tower 2, Kota.
+                        </li>
+                        <li class="m-2"><strong>Eligibility Criteria</strong>
+                            <ul>
+                                <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                                    Anybody can participate in the competition.
+                                </li>
+                                <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                                    Students can participate individually or in a team.
+                                </li>
+                                <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                                    Maximum 4 participants are allowed in a team.
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="row about-extra" style="overflow-y: hidden">
+                <div class="col-lg-6 content order-lg-1 order-2" style="overflow-y: hidden">
+                    <h4 style="overflow-y: hidden;">Structure of the event</h4>
+                    <ul class="p-3">
+                        <li class="m-2">
+                            <strong>Phase 1</strong>
+                            <ul class="p-3">
+                                <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                                    Team will have registered with us for 1st phase.
+                                </li>
+                                <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                                    To register, a link will be available on our website from 24th June 2019
+                                    to 5th July
+                                    2019.
+                                </li>
+                                <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                                    Clicking on the link will open a form that is divided in two parts.
+                                </li>
+                                <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                                    In the first part, students have to fill their personal information and
+                                    in second
+                                    part, students have to fill information about their innovative business plan.
+                                </li>
+                                <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                                    Expert panel will overview the plan and provide suggestions (if
+                                    required).Best team will be shortlisted.
+                                </li>
+                                <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                                    All the teams will be informed about the details of the final event through email by
+                                    10th july 2019.
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="m-2">
+                            <strong>Phase 2</strong>
+                            <ul class="p-3">
+                                <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                                    The shortlisted teams has to be present on time with their detailed
+                                    Business plan in
+                                    MS Word or PDF format (Hard copy) and give power point presentation in front of the
+                                    judge’s panel on Date of final Presentation.
+                                </li>
+                                <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                                    Maximum time for presentation will be 15 minutes and number of slides
+                                    should not
+                                    exceed 20.
+                                </li>
+                                <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                                    Questions will be asked by Expert panel
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp d-flex justify-content-center">
+                    <img src="{{ url_for('static', filename='img/phase.svg') }}" class="img-fluid mt-n5 idea-svg"
+                         alt="">
+                </div>
+            </div>
+            <div class="row about-extra" style="overflow-y: hidden">
+                <div class="col-lg-6 wow fadeInUp d-flex justify-content-center">
+                    <img src="{{ url_for('static', filename='img/eval.svg') }}" class="img-fluid " alt="">
+                </div>
+                <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+                    <h4 style="overflow-y: hidden;">Evaluation</h4>
+                    <ul class="p-3">
+                        <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                            A committee of professionals will shortlist the team on the basis of the
+                            Business Plan details provide by them in the first phase of the competition.
+                        </li>
+                        <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                            In the final phase the following points will be considered for assessment:
+                            <ul>
+                                <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                                    Feasibility of the business plan.
+                                </li>
+                                <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                                    Communication skills of participants.
+                                </li>
+                                <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                                    Presentation skills.
+                                </li>
+                                <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                                    Quality of presentation.
+                                </li>
+                                <li class="m-2"><span style="font-size:30px"><span style="font-size:20px">&bull; </span> </span>
+                                    Answers given by participants.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- #about -->
+    <!--==========================
+         Why Us Section
+       ============================-->
+    <section id="why-us" class="wow fadeIn">
+        <div class="container">
+            <header class="section-header">
+                <h3 style="overflow-y: hidden;">Prizes</h3>
+            </header>
+
+            <div class="row row-eq-height justify-content-center">
+
+                <div class="col-lg-4 mb-4" style="overflow-y: hidden">
+                    <div class="card wow bounceInUp">
+                        <div class="d-flex justify-content-center">
+                            <img src="{{ url_for('static', filename='img/1st.png') }}"
+                                 style="height: 50px;width: 50px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">1<sup>st</sup> Prize</h5>
+                            <p class="card-text">Rs. 15000+<br>Memento+<br>Certificate</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4" style="overflow-y: hidden">
+                    <div class="card wow bounceInUp">
+                        <div class="d-flex justify-content-center">
+                            <img src="{{ url_for('static', filename='img/2nd.png') }}"
+                                 style="height: 50px;width: 50px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">2<sup>nd</sup> Prize</h5>
+                            <p class="card-text">Rs. 10000+<br>Memento+<br>Certificate</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4" style="overflow-y: hidden">
+                    <div class="card wow bounceInUp">
+                        <div class="d-flex justify-content-center">
+                            <img src="{{ url_for('static', filename='img/3rd.png') }}"
+                                 style="height: 50px;width: 50px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">3<sup>rd</sup> Prize</h5>
+                            <p class="card-text">Rs. 5000+<br>Memento+<br>Certificate</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-header">
+                    <p>All the qualified participants for phase II will get a Participation Certificate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==========================
+         Contact Section
+       ============================-->
+    <!-- <section id="register">
+         <div class="container-fluid m-3">
+             {% with messages = get_flashed_messages() %}
+             {% if messages %}
+             <div class="uk-alert-success" uk-alert>
+                 {% for message in messages %}
+                 <a class="uk-alert-close" uk-close></a>
+                 <p>{{ message }}</p>
+                 {% endfor %}
+             </div>
+             {% endif %}
+             {% endwith %}
+             <header class="section-header">
+                 <h3>Register</h3>
+             </header>
+             <div class="d-flex justify-content-center m-3 p-3">
+                 <form action="{{ url_for('register') }}" method="post" enctype="multipart/form-data">
+
+                     <div class="uk-margin">
+                         <div class="uk-inline">
+                             <span class="uk-form-icon" uk-icon="icon: user"></span>
+                             <input class="uk-input uk-form-width-large" type="text" name="full_name"
+                                    placeholder="Full Name">
+                         </div>
+                     </div>
+
+                     <div class="uk-margin">
+                         <div class="uk-inline">
+                             <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                             <input class="uk-input uk-form-width-large" type="text" name="email" placeholder="Email">
+                         </div>
+                     </div>
+
+                     <div class="uk-margin">
+                         <div class="uk-inline">
+                             <span class="uk-form-icon" uk-icon="icon: receiver"></span>
+                             <input class="uk-input uk-form-width-large" type="text" name="pno"
+                                    placeholder="Phone Number">
+                         </div>
+                     </div>
+                     <div class="uk-margin">
+                         <div class="uk-inline">
+                             <span class="uk-form-icon" uk-icon="icon: pencil"></span>
+                             <input class="uk-input uk-form-width-large" type="text" name="title"
+                                    placeholder="Idea Title">
+                         </div>
+                     </div>
+                     <div class="uk-margin">
+                         <textarea class="uk-textarea uk-form-width-large" name="desc" rows="5"
+                                   placeholder="Idea Description"></textarea>
+                     </div>
+                     <div class="uk-margin">
+                         <div uk-form-custom>
+                             <input type="file" name="doc">
+                             <button class="uk-button uk-button-default" type="button" tabindex="-1">Upload Document
+                             </button>
+                         </div>
+                     </div>
+                     <div class="d-flex justify-content-center">
+                         <button class="uk-button uk-button-primary" type="submit">Register</button>
+                     </div>
+
+                 </form>
+             </div>
+         </div>
+     </section>#contact -->
+
+</main>
+
+<!--==========================
+     Portfolio Section
+   ============================-->
+<section id="portfolio" class="clearfix">
+    <div class="container">
+
+        <header class="section-header">
+            <h3 class="section-title" style="overflow-y: hidden;">Glimpses</h3>
+        </header>
+        <div class="row portfolio-container" style="overflow-y: hidden">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+                <div class="portfolio-wrap">
+                    <img src="{{ url_for('static', filename='img/team/1.JPG') }}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <div>
+                            <a href="{{ url_for('static', filename='img/team/1.JPG') }}" class="link-preview"
+                               data-lightbox="portfolio"
+                               title="Preview"><i class="ion ion-eye"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+                <div class="portfolio-wrap">
+                    <img src="{{ url_for('static', filename='img/team/2.JPG') }}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <div>
+                            <a href="{{ url_for('static', filename='img/team/2.JPG') }}" class="link-preview"
+                               data-lightbox="portfolio"
+                               title="Preview"><i class="ion ion-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="portfolio-wrap">
+                    <img src="{{ url_for('static', filename='img/team/3.JPG') }}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <div>
+                            <a href="{{ url_for('static', filename='img/team/3.JPG') }}" class="link-preview"
+                               data-lightbox="portfolio"
+                               title="Preview"><i class="ion ion-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+                <div class="portfolio-wrap">
+                    <img src="{{ url_for('static', filename='img/team/4.JPG') }}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <div>
+                            <a href="{{ url_for('static', filename='img/team/4.JPG') }}" class="link-preview"
+                               data-lightbox="portfolio"
+                               title="Preview"><i class="ion ion-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="portfolio-wrap">
+                    <img src="{{ url_for('static', filename='img/team/5.JPG') }}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <div>
+                            <a href="{{ url_for('static', filename='img/team/5.JPG') }}" class="link-preview"
+                               data-lightbox="portfolio"
+                               title="Preview"><i class="ion ion-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+                <div class="portfolio-wrap">
+                    <img src="{{ url_for('static', filename='img/team/6.JPG') }}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <div>
+                            <a href="{{ url_for('static', filename='img/team/6.JPG') }}" class="link-preview"
+                               data-lightbox="portfolio"
+                               title="Preview"><i class="ion ion-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section><!-- #portfolio -->
+
+<!--==========================
+  Footer
+============================-->
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <p class="m-3">Faculty Coordinator: Dr. Subodh Nalwaya - 98267-50503</p>
+                <p class="m-3">Student Coordinator: 80036-76202</p>
+                <p class="m-3">Support Email: eec@cpur.edu.in</p>
+                <p class="m-3">Address: CP Tower, Road No. 1, IPIA, Kota (Raj.) India - 324005</p>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center">
+            <a class="m-3" href="https://cpur.in" target="_blank" uk-icon="world"></a>
+            <a class="m-3" href="https://www.facebook.com/cpurajasthan/" target="_blank" uk-icon="facebook"></a>
+            <a class="m-3" href="https://www.instagram.com/cp.university/" target="_blank" uk-icon="instagram"></a>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="copyright">
+            &copy; Copyright <strong>NewBiz</strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
+            -->
+            Designed by <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a><br>
+            Arts by <a href="https://freepik.com/" target="_blank">freepik</a>
+        </div>
+    </div>
+</footer><!-- #footer -->
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+<!-- Uncomment below i you want to use a preloader -->
+<!-- <div id="preloader"></div> -->
+
+<!-- JavaScript Libraries -->
+<script src="{{ url_for('static', filename='contactform/contactform.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
+<script src="{{ url_for('static', filename='lib/jquery/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='lib/jquery/jquery-migrate.min.js') }}"></script>
+<script src="{{ url_for('static', filename='lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
+<script src="{{ url_for('static', filename='lib/mobile-nav/mobile-nav.js') }}"></script>
+<script src="{{ url_for('static', filename='lib/wow/wow.min.js') }}"></script>
+<script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js') }}"></script>
+<script src="{{ url_for('static', filename='lib/counterup/counterup.min.js') }}"></script>
+<script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
+<script src="{{ url_for('static', filename='lib/isotope/isotope.pkgd.min.js') }}"></script>
+<script src="{{ url_for('static', filename='lib/lightbox/js/lightbox.min.js') }}"></script>
+<!-- Contact Form JavaScript File -->
+<!-- Template Main Javascript File -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>

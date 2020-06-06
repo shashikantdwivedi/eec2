@@ -1,0 +1,29 @@
+{% extends "form.html" %}
+{% block formType %}Register{% endblock formType %}
+{% block form %}
+{{ super() }}
+<div class="form-holder">
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <div class="alert alert-primary alert-dismissible ml-5 mr-5">
+        {% for message in messages %}
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <h5 class="text-center">{{ message }}.</h5>
+        {% endfor %}
+    </div>
+    {% endif %}
+    {% endwith %}
+    <div class="form-content">
+        <div class="form-items">
+            <h3>Verify OTP</h3>
+            <p>Emerging Entrepreneur Competition 2019</p>
+            <form method="post" action="{{ url_for('validating_registration') }}">
+                <input class="form-control" type="text" name="otp" placeholder="Enter OTP" required>
+                <div class="form-button">
+                    <button id="submit" type="submit" class="ibtn">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock form %}

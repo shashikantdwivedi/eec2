@@ -1,0 +1,22 @@
+{% extends "user.html" %}
+{% block formType %}Error{% endblock formType %}
+{% block form %}
+<div class="form-holder">
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <div class="alert alert-primary alert-dismissible ml-5 mr-5">
+        {% for message in messages %}
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <h5 class="text-center">{{ message }}.</h5>
+        {% endfor %}
+    </div>
+    {% endif %}
+    {% endwith %}
+    <div class="form-content">
+        <div class="form-items">
+            <h3>Error!!</h3>
+            <p>Sorry and error  has occurred from our side.For help you can contact our coordinator - 80036-76202 or email use at eec@cpur.edu.in </p>
+        </div>
+    </div>
+</div>
+{% endblock form %}

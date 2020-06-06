@@ -1,0 +1,34 @@
+{% extends "user.html" %}
+{% block formType %}Register{% endblock formType %}
+{% block form %}
+<div class="form-holder">
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <div class="alert alert-primary alert-dismissible ml-5 mr-5">
+        {% for message in messages %}
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <h5 class="text-center">{{ message }}.</h5>
+        {% endfor %}
+    </div>
+    {% endif %}
+    {% endwith %}
+    <div class="form-content">
+        <div class="form-items">
+            <div class="page-links">
+                <a href="{{ url_for('fill_form') }}" class="m-3">Fill &#x2192;</a>
+                <a href="{{ url_for('download_form') }}" class="m-3">Download &#x2192;</a><a
+                href="{{ url_for('finish_registration') }}" class="active m-3">Upload & Finish</a>
+            </div>
+            <h3>Finish Registration</h3>
+            <p>Upload the filled business form here and press submit to complete your registration.</p>
+            <form action="{{ url_for('upload_form') }}" enctype="multipart/form-data" method="post">
+                <div class="form-group">
+                    <input type="file" class="form-control-file border" name="file">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+{% endblock form %}

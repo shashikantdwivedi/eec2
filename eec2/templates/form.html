@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block formType %}{% endblock formType %}</title>
+    <link href="{{ url_for('static', filename='lib/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/iofrm-style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/iofrm-theme7.css') }}">
+</head>
+<body>
+<div class="form-body">
+    <div class="row">
+        <div class="img-holder">
+            <div class="bg"></div>
+            <div class="info-holder">
+                <img src="{{ url_for('static', filename='img/login.svg') }}" alt="">
+            </div>
+        </div>
+        {% block form %}
+        {% endblock form %}
+    </div>
+</div>
+<script src="{{ url_for('static', filename='lib/jquery/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='lib/jquery/popper.min.js') }}"></script>
+<script src="{{ url_for('static', filename='lib/bootstrap/js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/login-main.js') }}"></script>
+</body>
+</html>
